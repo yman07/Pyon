@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:gravity="center">
+
+	<SurfaceView
+		android:id="@+id/surfaceView"
+		android:layout_gravity="center"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:onClick="focus"/>
+
+	<SurfaceView
+		android:id="@+id/surfaceView2"
+		android:layout_gravity="center"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:alpha="0.5"/>
+
+	<TextView
+		android:id="@+id/text"
+		android:text="@string/hello_world"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:textColor="#FFFFFF"
+		android:textSize="30sp"
+		android:textAlignment="center"
+		android:gravity="center"/>
+
+	<SeekBar
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:layout_gravity="bottom|center_horizontal"
+		android:paddingBottom="10dp"
+		android:id="@+id/seekBar"/>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:orientation="vertical"
+		android:layout_gravity="top|right"
+		android:layout_marginRight="10dp">
+
+		<ImageButton
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:src="@android:drawable/ic_menu_set_as"
+			android:onClick="calibrate"
+			android:layout_marginTop="10dp"/>
+
+		<CheckBox
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:id="@+id/mainCheckBox1"
+			android:text="Black"
+			android:layout_marginTop="20dp"
+			android:onClick="blackClick"/>
+
+	</LinearLayout>
+
+</FrameLayout>
+
